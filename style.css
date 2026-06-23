@@ -1,0 +1,80 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: hsl(180, 46%, 80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    width: 350px;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-30px);
+}
+
+.card__img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card__content {
+    padding: 15px;
+}
+
+.card__content__title {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+    color: hsl(0, 0%, 20%);
+}
+
+.card__content__desc {
+    font-size: 1em;
+    color: hsl(0, 0%, 40%);
+}
+
+.card_actions {
+    padding: 0 20px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.card__button {
+flex-grow: 1;
+padding: 10px;
+border: none;
+border-radius: 15px;
+cursor: pointer;
+font-size: 1em;
+transition: -backgorund-color;
+
+
+}
+.card--button--primary {
+background-color: black;
+color: white;
+
+}
+.card__button--primary:hover{
+    background-color: lawngreen;
+
+}
+.card__button--secundary {
+    background-color: rgb(88, 32, 32);
+    color: white;
+
+}
+.card__button--secundary:hover{
+    background-color: lawngreen;
+
+
+}
